@@ -1,3 +1,56 @@
+# PatikaDev - React Native Kursu - Navigation Ders İçi Birlikte Yap Projesi
+Bu repo [Patika](www.patika.dev) React Native programımız kapsamında "React Native Kursu - Navigation" Ders İçi Birlikte Yap Projesi için oluşturulan repodur. İçerisinde bir adet "A6KebapFitnessApp" isimli React Native uygulaması barındırmaktadır.
+
+# Installation
+Öncelikle projeyi clonelayın. 
+
+> git clone https://github.com/kahraman-mustafa/PatikaDev_ReactNative_A6KebapFitnessApp.git
+
+# Usage
+Projeyi klonladıktan sonra Visual Studio Code programında açınız.
+Linux için:
+> cd A5TodoApp
+code .
+
+![Proje Resmi-1](https://raw.githubusercontent.com/kahraman-mustafa/PatikaDev_ReactNative_A6KebapFitnessApp/master/A6KebapFitnessApp_1.png)
+![Proje Resmi-2](https://raw.githubusercontent.com/kahraman-mustafa/PatikaDev_ReactNative_A6KebapFitnessApp/master/A6KebapFitnessApp_2.png)
+![Proje Resmi-3](https://raw.githubusercontent.com/kahraman-mustafa/PatikaDev_ReactNative_A6KebapFitnessApp/master/A6KebapFitnessApp_3.png)
+![Proje Resmi-4](https://raw.githubusercontent.com/kahraman-mustafa/PatikaDev_ReactNative_A6KebapFitnessApp/master/A6KebapFitnessApp_4.png)
+
+# Issues Dealt With
+Error:
+> Could not create task ':react-native-safe-area-context:compileDebugAndroidTestKotlin'. > No enum constant org.jetbrains.kotlin.gradle.plugin.PropertiesProvider.JvmTargetValidation
+
+My package versions were:
+* "@react-navigation/native": "^6.1.8",
+* "@react-navigation/native-stack": "^6.9.14",
+* "react": "18.2.0",
+* "react-native": "0.72.5",
+* "react-native-safe-area-context": "^4.7.2",
+* "react-native-screens": "^3.25.0"
+
+**Solution Worked**
+- https://github.com/facebook/react-native/issues/38379
+
+- https://stackoverflow.com/questions/76698415/execution-failed-for-task-tasks
+
+Applied this to android > build.gradle file:
+> i try kotlin lastest version. this method worked for me
+
+> kotlinVersion = '1.9.0'
+
+> classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
+
+https://stackoverflow.com/questions/71580187/how-to-set-kotlin-version
+
+******************************************************************
+
+# Contributing
+Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi değiştirmek istediğinizi tartışmak için bir konu açınız.
+
+# License
+[MIT](https://opensource.org/licenses/MIT)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
